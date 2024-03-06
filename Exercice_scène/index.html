@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+  </head>
+  <body>
+		<script type="module" src="/main.js"></script>
+    <a-scene>
+      <a-sky src="AdobeStock_172637409_Preview.jpeg"></a-sky>
+        <a-asset>
+            <a-asset-item id="lamp-obj" src="Streetlight/Obj/Streetlight_HighRes.obj"></a-asset-item>
+            <a-asset-item id="lamp-mtl" src="Streetlight/Obj/Streetlight_HighRes.mtl"></a-asset-item>
+            <a-asset-item id="car-obj" src="Bus_Setia_Negara/Material/bus_setia_negara_texturizer.obj"></a-asset-item>
+            <a-asset-item id="car-mtl" src="Bus_Setia_Negara/Material/bus_setia_negara_texturizer.mtl"></a-asset-item>
+            <a-asset-item id="tree-obj" src="Tree 02/Tree.obj"></a-asset-item>
+            <a-asset-item id="tree-mtl" src="Tree 02/Tree.mtl"></a-asset-item>
+        </a-asset>
+        <a-entity obj-model="obj: #car-obj; mtl: #car-mtl" scale="1.5 1.5 1.5" position="0 0 -17" rotation="0 -15.51 0" material="src: bark_0004.jpg"></a-entity>
+        <a-entity obj-model="obj: Streetlight/Obj/Streetlight_HighRes.obj; mtl: #lamp-mtl" scale="0.02 0.02 0.02" position="-6.35 0 2.19"></a-entity>
+        <a-entity obj-model="obj: Tree 02/Tree.obj; mtl: #tree-mtl"></a-entity>
+        <a-plane height="1000" width="1000" rotation="-90 0 0" repeat="500 500" src="pexels-scott-webb-3255761.jpg"></a-plane>
+        <a-entity light="color: #e5891d; groundColor: #f9f06b; distance: 40; type: point" position="-6.14324 7.25967 3.24156"></a-entity>
+        <a-entity light="color: #e5891d; distance: 40; type: point; groundColor: #f9f06b" position="-6.14324 7.25967 1.11344"></a-entity>
+        <a-entity light="color: #9a9996; intensity: 0.3" position="500 1000 -750"></a-entity>
+    </a-scene>
+    <script src="script.js"></script>
+  </body>
+</html>
